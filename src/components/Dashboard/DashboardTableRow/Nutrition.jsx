@@ -3,7 +3,7 @@ import { PieChart } from "react-minimal-pie-chart";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { NumberFormatter } from "../../../utils";
-import PrimaryButton from "../../Buttons/ArrowButton/RightArrowButton";
+import PrimaryButton from "../../Buttons/RightArrowButton";
 
 const Wrapper = styled.div`
   ${tw`flex h-full justify-center items-center`}

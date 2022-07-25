@@ -8,13 +8,13 @@ const Wrapper = styled.div`
   ${tw`flex items-center justify-center bg-cyan rounded-xl `}
 `;
 
-const StyledImage = styled.img`
+const BellButton = styled.img`
   ${tw`m-4`}
 `;
 const SecondaryButton = () => {
   return (
     <Wrapper>
-      <StyledImage src={bellSign} alt="bellSign" />
+      <BellButton src={bellSign} alt="bellSign" />
     </Wrapper>
   );
 };

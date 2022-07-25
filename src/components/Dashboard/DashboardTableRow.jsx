@@ -3,14 +3,14 @@ import React from "react";
 import "react-circular-progressbar/dist/styles.css";
 import styled from "styled-components";
 import tw from "twin.macro";
-import SecondaryButton from "../Buttons/SecondaryButton";
+import SecondaryButton from "../Buttons/BellButton";
 import TableRowNutrition from "./DashboardTableRow/Nutrition";
 import TableRowSteps from "./DashboardTableRow/Steps";
 import TableRowWorkout from "./DashboardTableRow/Workout";
 import TableRowUser from "./DashboardTableRow/User";
 
 const Wrapper = styled.div`
-  ${tw`flex h-24 justify-end bg-primary rounded-2xl mx-3 my-4 `}
+  ${tw`flex h-24 justify-end bg-primary rounded-2xl mx-3 mb-6 `}
 `;
 
 const Content = styled.div`

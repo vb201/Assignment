@@ -7,7 +7,7 @@ import workoutSVG from "../../assets/images/workout.svg";
 import nutritionSVG from "../../assets/images/nutrition.svg";
 
 const Wrapper = styled.div`
-  ${tw`flex h-20 justify-end mx-3`}
+  ${tw`flex items-center h-20 justify-end mx-3`}
 `;
 const Content = styled.div`
   ${tw`flex h-full items-center justify-start mx-2`}

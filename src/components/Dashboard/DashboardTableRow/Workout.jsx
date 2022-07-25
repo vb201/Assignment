@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import performedDateSVG from "../../../assets/images/performedDate.svg";
 import scheduleDateSVG from "../../../assets/images/scheduleDate.svg";
-import PrimaryButton from "../../Buttons/ArrowButton/RightArrowButton";
+import PrimaryButton from "../../Buttons/RightArrowButton";
 
 const Wrapper = styled.div`
   ${tw`flex h-full justify-center items-center`}
