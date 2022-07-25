@@ -4,16 +4,17 @@ import "react-circular-progressbar/dist/styles.css";
 import styled from "styled-components";
 import tw from "twin.macro";
 import SecondaryButton from "../Buttons/SecondaryButton";
-import TableRowNutrition from "./TableRowNutrition";
-import TableRowSteps from "./TableRowSteps";
-import TableRowWorkout from "./TableRowWorkout";
+import TableRowNutrition from "./DashboardTableRow/Nutrition";
+import TableRowSteps from "./DashboardTableRow/Steps";
+import TableRowWorkout from "./DashboardTableRow/Workout";
+import TableRowUser from "./DashboardTableRow/User";
 
 const Wrapper = styled.div`
   ${tw`flex h-24 justify-end bg-primary rounded-2xl mx-3 my-4 `}
 `;
 
 const Content = styled.div`
-  ${tw`flex items-center justify-center mx-2 my-2`}
+  ${tw`flex items-center justify-start mx-2 my-2`}
 `;
 
 const Heading = styled.p`
@@ -26,7 +27,7 @@ const DashboardTableRow = ({ data }) => {
   return (
     <Wrapper>
       <Content className="col-4">
-        <Heading>Steps</Heading>
+        <TableRowUser name={data.name} email={data.email} />
       </Content>
       <Content className="col-2">
         <TableRowSteps

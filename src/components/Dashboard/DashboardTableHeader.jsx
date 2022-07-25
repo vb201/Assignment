@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   ${tw`flex h-20 justify-end mx-3`}
 `;
 const Content = styled.div`
-  ${tw`flex h-full items-center justify-center mx-2`}
+  ${tw`flex h-full items-center justify-start mx-2`}
 `;
 
 const Heading = styled.p`
@@ -19,6 +19,7 @@ const Heading = styled.p`
 const DashboardTableHeader = () => {
   return (
     <Wrapper>
+      <Content className="col-4" />
       <Content className="col-2">
         <img src={stepSVG} alt="step" />
         <Heading>Steps</Heading>

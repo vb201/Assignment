@@ -2,8 +2,8 @@ import React from "react";
 import { PieChart } from "react-minimal-pie-chart";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { NumberFormatter } from "../../utils";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import { NumberFormatter } from "../../../utils";
+import PrimaryButton from "../../Buttons/ArrowButton/RightArrowButton";
 
 const Wrapper = styled.div`
   ${tw`flex h-full justify-center items-center`}
@@ -46,7 +46,7 @@ const CalorieTargetSubHeading = styled.p`
   ${tw`text-secondary px-3 font-bold`}
 `;
 
-const TableRowNutrition = ({ calorieIntake, calorieTarget }) => {
+const Nutrition = ({ calorieIntake, calorieTarget }) => {
   const shiftSize = 7;
   return (
     <Wrapper>
@@ -88,4 +88,4 @@ const TableRowNutrition = ({ calorieIntake, calorieTarget }) => {
   );
 };
 
-export default TableRowNutrition;
+export default Nutrition;

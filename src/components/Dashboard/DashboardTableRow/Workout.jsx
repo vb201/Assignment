@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import performedDateSVG from "../../assets/images/performedDate.svg";
-import scheduleDateSVG from "../../assets/images/scheduleDate.svg";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import performedDateSVG from "../../../assets/images/performedDate.svg";
+import scheduleDateSVG from "../../../assets/images/scheduleDate.svg";
+import PrimaryButton from "../../Buttons/ArrowButton/RightArrowButton";
 
 const Wrapper = styled.div`
   ${tw`flex h-full justify-center items-center`}
@@ -20,7 +20,7 @@ const Contains = styled.div`
 const Text = styled.p`
   ${tw`text-white font-semibold text-sm px-2`}
 `;
-const TableRowWorkout = ({ performedDate, scheduleDate }) => {
+const Workout = ({ performedDate, scheduleDate }) => {
   return (
     <Wrapper>
       <DateWrapper>
@@ -39,4 +39,4 @@ const TableRowWorkout = ({ performedDate, scheduleDate }) => {
   );
 };
 
-export default TableRowWorkout;
+export default Workout;

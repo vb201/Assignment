@@ -2,7 +2,7 @@ import React from "react";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { NumberFormatter } from "../../utils";
+import { NumberFormatter } from "../../../utils";
 
 const StepWalkedHeading = styled.div`
   font-size: 12px;
@@ -36,7 +36,8 @@ const StepTargetSubHeading = styled.p`
   line-height: 12px;
   ${tw`text-secondary px-3 font-bold`}
 `;
-const TableRowSteps = ({ stepsWalked, stepsTarget }) => {
+
+const Steps = ({ stepsWalked, stepsTarget }) => {
   return (
     <>
       <StepWalkedContainer>
@@ -84,4 +85,4 @@ const TableRowSteps = ({ stepsWalked, stepsTarget }) => {
   );
 };
 
-export default TableRowSteps;
+export default Steps;
